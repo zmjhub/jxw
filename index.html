@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>就学网</title>
+	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+	 
+		 
+</head>
+<body>
+	<!-- logo区域 -->
+	<header class="clear box-center">
+		<div class="logo"></div>
+		<div class="search">
+			<input type="text" placeholder="请输入学校名称">
+			<input type="button" value="搜索">
+		</div>
+	</header>
+	<!-- 导航区域 -->
+	<nav>
+		<div class="box box-center">
+			<ul class="nav">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">学校推荐</a></li>
+				<li><a href="#">专业设置</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- 正文部分 -->
+	<section>
+		<!-- 轮播 -->
+		<div id="slideBox" class="slideBox box-center">
+			<div class="hd">
+				<ul><li>1</li><li>2</li><li>3</li></ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li><a href="#" target="_blank"><img src="img/pic1.jpg" /></a></li>
+					<li><a href="#" target="_blank"><img src="img/pic2.jpg" /></a></li>
+					<li><a href="#" target="_blank"><img src="img/pic3.jpg" /></a></li>
+				</ul>
+			</div>
+
+			<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+			<a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a>
+
+		</div>
+
+		
+	</section>
+	<!-- 底部 -->
+	<footer>
+		<div class="box box-center">
+			<ul class="info">
+				<li><a href="#">关于我们</a>|</li>
+				<li><a href="#">公司荣誉</a>|</li>
+				<li><a href="#">公司简介</a>|</li>
+				<li><a href="#">合作联系</a>|</li>
+				<li><a href="#">营业执照</a>|</li>
+				<li>客服电话：400-000( 工作日接听 )</li>
+			</ul>
+			<ul class="banquan">
+				<li>版权所有：贵州交通职业技术学院 </li>
+				<li>备案编号：黔IP备10002018 </li>
+				<li>贵公网安备 52011502000035号</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript">
+	$(function(){
+		jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+	})
+		
+</script>
+</html>
